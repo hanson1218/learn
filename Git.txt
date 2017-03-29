@@ -11,3 +11,4 @@ git push
 git reset --hard HEAD^(shangyige banben )
 git reset --hard 23dsff(version)
 git reflog  记录所有用过的命令
+git 缓存区
