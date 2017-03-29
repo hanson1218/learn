@@ -11,4 +11,8 @@ git push
 git reset --hard HEAD^(shangyige banben )
 git reset --hard 23dsff(version)
 git reflog  记录所有用过的命令
-git 缓存区
+git 缓存区 add 将修改放到缓存区，commit 将缓存区修改提交到分支（如果修改没有add,直接commit,分支代码不会变）
+
+git checkout -- file可以丢弃工作区的修改：命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+
+git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
