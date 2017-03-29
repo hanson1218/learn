@@ -1,0 +1,13 @@
+SSL certificate problem: unable to get local issuer certificate
+solution:git config --global http.sslVerify false
+
+fatal: Could not read from remote repository.
+使用ssh下载
+
+
+git add <file>
+git commit -m''
+git push
+git reset --hard HEAD^(shangyige banben )
+git reset --hard 23dsff(version)
+git reflog  
