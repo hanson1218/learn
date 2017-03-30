@@ -4,6 +4,11 @@ solution:git config --global http.sslVerify false
 fatal: Could not read from remote repository.
 使用ssh下载
 
+git config --list:查看配置
+git config user.name：查看用户名
+git config user.email：查看邮箱
+git config --global user.name "username"
+git config --global user.email "user.email"
 
 git add <file>
 git commit -m''
@@ -13,6 +18,19 @@ git reset --hard 23dsff(version)
 git reflog  记录所有用过的命令
 git 缓存区 add 将修改放到缓存区，commit 将缓存区修改提交到分支（如果修改没有add,直接commit,分支代码不会变）
 
-git checkout -- file可以丢弃工作区的修改：命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+git checkout -- file可以丢弃工作区的修改：其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”
 
-git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
+	命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+
+git reset HEAD file可以把暂存区（commit之前）的修改撤销掉（unstage），重新放回工作区
+
+
+git   rm 用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。
+
+建立远程仓库：
+			echo "# learn" >> README.md
+			git init
+			git add README.md
+			git commit -m "first commit"
+			git remote add origin https://github.com/hanson1218/learn.git
+			git push -u origin master  -u(本地仓库和远程建立关联)
