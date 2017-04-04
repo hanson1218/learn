@@ -41,3 +41,6 @@ git切换分支：git checkout -b dev origin/dev
 			
 git diff    #是工作区(work dict)和暂存区(stage)的比较
 git diff --cached    #是暂存区(stage)和分支(master)的比较
+
+git 合并分支：
+git merge dev
