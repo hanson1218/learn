@@ -27,7 +27,7 @@ git config --global user.email "user.email"
 git add <file>
 git commit -m''
 git push
-git reset --hard HEAD^(shangyige banben )
+git reset --hard HEAD^(上一个版本)
 git reset --hard 23dsff(version)
 git reflog  记录所有用过的命令
 git 缓存区 add 将修改放到缓存区，commit 将缓存区修改提交到分支（如果修改没有add,直接commit,分支代码不会变）
@@ -41,6 +41,7 @@ git reset HEAD file可以把暂存区（commit之前）的修改撤销掉（unst
 
 git   rm 用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。
 
+
 建立远程仓库：
 			echo "# learn" >> README.md
 			git init
@@ -48,3 +49,7 @@ git   rm 用于删除一个文件。如果一个文件已经被提交到版本�
 			git commit -m "first commit"
 			git remote add origin https://github.com/hanson1218/learn.git
 			git push -u origin master  -u(本地仓库和远程建立关联)
+			
+			
+git diff    #是工作区(work dict)和暂存区(stage)的比较
+git diff --cached    #是暂存区(stage)和分支(master)的比较
