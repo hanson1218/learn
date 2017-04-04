@@ -7,8 +7,8 @@ fatal: Could not read from remote repository.
 git config --list:查看配置
 git config user.name：查看用户名
 git config user.email：查看邮箱
-git config --global user.name "username"
-git config --global user.email "user.email"
+git config --global user.name "username" 修改用户名
+git config --global user.email "user.email" 修改邮箱
 
 git add <file>
 git commit -m''
@@ -36,6 +36,8 @@ git   rm 用于删除一个文件。如果一个文件已经被提交到版本�
 			git remote add origin https://github.com/hanson1218/learn.git
 			git push -u origin master  -u(本地仓库和远程建立关联)
 			
+git切换分支：git checkout -b dev origin/dev 
+			等价于 git branch dev  + git checkout dev
 			
 git diff    #是工作区(work dict)和暂存区(stage)的比较
 git diff --cached    #是暂存区(stage)和分支(master)的比较
