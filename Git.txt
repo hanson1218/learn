@@ -34,3 +34,10 @@ git   rm 用于删除一个文件。如果一个文件已经被提交到版本�
 			git commit -m "first commit"
 			git remote add origin https://github.com/hanson1218/learn.git
 			git push -u origin master  -u(本地仓库和远程建立关联)
+			
+
+			
+git checkout -b dev origin/dev，作用是从远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+
+git diff    #是工作区(work dict)和暂存区(stage)的比较
+git diff --cached    #是暂存区(stage)和分支(master)的比较
