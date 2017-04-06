@@ -1,0 +1,2 @@
+1.Resource Path	Location Type The project cannot be built until build path errors are resolved	Unknown	Java Problem
+	project-->build Automatically
