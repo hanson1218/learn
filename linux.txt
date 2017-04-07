@@ -1,1 +1,4 @@
 关键字搜索：cat -n ews-hotel-service.event_2017-04-06_0.txt |grep "HotelSearchResponseProcessor.java:2893"
+
+less fileName
+/关键字 n:向下，N:向上，ctrl+f：下一屏  ctrl + B：上一屏
