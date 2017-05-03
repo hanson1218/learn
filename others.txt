@@ -1,0 +1,9 @@
+updatedBranch=`echo ${GIT_BRANCH#*/} | sed "s#/#_#g"` 字符串替换
+sed "s#/#_#g"` filename 文件替换
+
+
+
+
+tomcat:
+新添加的tomcat要选择Use tomcat installation(Task control of Tomcat installation) 即选择tomcat的安装目录来作为项目的发布目录。
+然后,下来四行,看到"Deploy Path"了没?它后面的值默认是"wtpwebapps",把它改成"webapps",也就是tomcat中发布项目所在的文件夹名字
